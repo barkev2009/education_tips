@@ -44,3 +44,12 @@ body {
 .header-item:after:last-child {
     border: none;
 }
+
+.active-header-item {
+    background-color: rgb(117, 34, 6);
+    color: rgb(247, 222, 148);
+}
+
+.active-header-item:hover {
+    background-color: rgb(185, 60, 19);
+}

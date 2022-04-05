@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(229, 203, 126);
+    font-family: 'Calibri';
+}
+
+.header {
+    width: 75vw;
+    height: 10vh;
+    margin: auto;
+    border-bottom: 2px solid rgb(247, 222, 148);
+    z-index: 100;
+}
+
+.header-item {
+    position: relative;
+    float: left;
+    width: 25vw;
+    padding-top: 3vh;
+    padding-bottom: calc(3vh + 2px) ;
+    text-align: center;
+    cursor: pointer;    
+    font-size: 3vh;
+    transition: all 0.6s;
+}   
+
+.header-item:hover {
+    background-color: rgb(247, 222, 148);
+}
+
+.header-item:not(:last-child):after {
+    content: '';
+    border-right: 2px solid rgb(247, 222, 148);
+    height: 5vh;
+    position: absolute;
+    top: 2.5vh;
+    left: 100%;
+}
+
+.header-item:after:last-child {
+    border: none;
+}
